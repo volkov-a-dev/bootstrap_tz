@@ -1,0 +1,22 @@
+@import "setting/core";
+
+.header{
+  &__sidebar {
+    background-color: $color-one;
+  }
+  &__title {
+    background-color: $color-two;
+  }
+}
+.page-title {
+  &__panel {
+    background-color: $header-panel;
+  }
+  &__content {
+    background-color: $header-title;
+  }
+}
+.message__sidebar {
+  background-color: $sidebar-background;
+}
+

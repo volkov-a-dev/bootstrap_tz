@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Admin panel</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" />
+
+	</head>
+	<body>
+		<div class="container-fluid">
+			<header class="header row">
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 header__sidebar">s</div>
+				<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+					<div class="row header__title">
+						<div class="header__title-text col-xs-3 col-sm-3 col-md-3 col-lg-3">
+							Dashboard
+						</div>
+						<div class=" header__title-name col-xs-3 col-sm-3 col-md-3 col-lg-1 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-1 pull-right">
+							Admin
+						</div>
+
+					</div>
+				</div>
+			</header>
+			<section class="page-title">
+				<div class="row">
+					<div class="page-title__panel col-xs-3 col-sm-3 col-md-3 col-lg-3">
+						s
+					</div>
+					<div class="page-title__content col-xs-9 col-sm-9 col-md-9 col-lg-9">
+						<h1 class="page-title__content-text">Admin panel</h1>
+					</div>
+				</div>
+			</section>
+			<section class="message">
+				<div class="row">
+					<div class="message__sidebar col-xs-3 col-sm-3 col-md-3 col-lg-3">
+						<ul class="nav nav-pills nav-stacked">
+							<li class="active"><a data-toggle="tab" href="#itemPlan">Plan</a></li>
+							<li><a data-toggle="tab" href="#menu1">Submit</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+						<div class="tab-content">
+							<div id="itemPlan" class="tab-pane fade in active">
+								<form class="form-horizontal">
+									<div class="form-group">
+										<div class='input-group date' id='datetimepicker1'>
+											<label class="control-label col-sm-2" for="time">Time:</label>
+											<div class="col-sm-8">
+												<input  type='text' class="form-control " id="time"/>
+												<span class="input-group-addon">
+													<span class="glyphicon glyphicon-calendar"></span>
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="sel1">Id massege</label>
+										<select class="form-control" id="sel1">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label class="control-label col-sm-2" for="pwd">CourseID:</label>
+										<div class="col-sm-10">
+											<input type="text" class="form-control" id="pwd" >
+										</div>
+									</div>
+								</form>
+							</div>
+							<div id="menu1" class="tab-pane fade">
+								<table class="table table-responsive table-hover">
+									<thead>
+									<tr>
+										<th>Firstname</th>
+										<th>Lastname</th>
+										<th>Email</th>
+										<th>Control</th>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<td>John</td>
+										<td>Doe</td>
+										<td>john@example.com</td>
+										<td>
+											<div class="btn btn-info">View</div>
+											<div class="btn btn-info">Submit</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Mary</td>
+										<td>Moe</td>
+										<td>mary@example.com</td>
+										<td>
+											<div class="btn btn-info">View</div>
+											<div class="btn btn-info">Submit</div>
+										</td>
+									</tr>
+									<tr>
+										<td>July</td>
+										<td>Dooley</td>
+										<td>july@example.com</td>
+										<td>
+											<div class="btn btn-info">View</div>
+											<div class="btn btn-info">Submit</div>
+										</td>
+									</tr>
+									</tbody>
+								</table>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>

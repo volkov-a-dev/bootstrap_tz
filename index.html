@@ -12,23 +12,26 @@
 	<body>
 		<div class="container-fluid">
 			<header class="header row">
-				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 header__sidebar">s</div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 header__sidebar "></div>
 				<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
 					<div class="row header__title">
-						<div class="header__title-text col-xs-3 col-sm-3 col-md-3 col-lg-3">
-							Dashboard
+						<div class="header__title-text col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
+							<span class="header__title-text-content glyphicon glyphicon-eye-open" aria-hidden="true">
+								<i>Dashboard</i>
+							</span>
 						</div>
-						<div class=" header__title-name col-xs-3 col-sm-3 col-md-3 col-lg-1 col-xs-offset-3 col-sm-offset-3 col-md-offset-3 col-lg-offset-1 pull-right">
-							Admin
+						<div class=" header__title-name col-xs-5 col-sm-5 col-md-5 col-lg-5 ">
+							<div class="text-right navbar-text">
+								Admin
+							</div>
 						</div>
-
 					</div>
 				</div>
 			</header>
 			<section class="page-title">
 				<div class="row">
-					<div class="page-title__panel col-xs-3 col-sm-3 col-md-3 col-lg-3">
-						s
+					<div class="page-title__panel col-xs-3 col-sm-3 col-md-3 col-lg-3 ">
+
 					</div>
 					<div class="page-title__content col-xs-9 col-sm-9 col-md-9 col-lg-9">
 						<h1 class="page-title__content-text">Admin panel</h1>
@@ -41,6 +44,7 @@
 						<ul class="nav nav-pills nav-stacked">
 							<li class="active"><a data-toggle="tab" href="#itemPlan">Plan</a></li>
 							<li><a data-toggle="tab" href="#menu1">Submit</a></li>
+							<li><a data-toggle="tab" href="#menu2">New message</a></li>
 						</ul>
 					</div>
 					<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
@@ -115,6 +119,9 @@
 									</tr>
 									</tbody>
 								</table>
+							</div>
+							<div id="menu2" class="tab-pane fade">
+								<div class="div">Submit new message </div>
 							</div>
 
 						</div>

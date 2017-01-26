@@ -1,7 +1,25 @@
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap; }
+
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column; }
+
 .header__sidebar {
   background-color: #2E282A; }
 .header__title {
-  background-color: #D1D8C9; }
+  background-color: #D1D8C9;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+  .header__title-text {
+    font-weight: bold;
+    color: #737373; }
+    .header__title-text-content {
+      padding-top: 13px;
+      font-size: 16px; }
 
 .page-title__panel {
   background-color: #737373; }

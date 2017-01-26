@@ -1,13 +1,37 @@
 @import "setting/core";
 
-.header{
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:  flex;
+  flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.header {
   &__sidebar {
     background-color: $color-one;
   }
   &__title {
     background-color: $color-two;
+    box-shadow: 0 0 40px rgba(0, 0, 0, .1) inset;
+    &-text {
+      font-weight: bold;
+      color: #737373;
+      &-content {
+        padding-top: 13px;
+        font-size: 16px;
+
+      }
+    }
   }
 }
+
 .page-title {
   &__panel {
     background-color: $header-panel;

@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+body {
+  font-family: 'Lato', sans-serif; }
+
 .row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -13,20 +17,74 @@
   background-color: #2E282A; }
 .header__title {
   background-color: #D1D8C9;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+  color: #737373; }
   .header__title-text {
     font-weight: bold;
-    color: #737373; }
+    padding-top: 13px;
+    padding-bottom: 13px; }
     .header__title-text-content {
-      padding-top: 13px;
-      font-size: 16px; }
+      font-size: 16px;
+      font-family: 'Lato', sans-serif; }
+  .header__title-name-content {
+    padding-top: 13px;
+    font-family: 'Lato', sans-serif; }
 
 .page-title__panel {
-  background-color: #737373; }
+  background: url("../img/background/zwartevilt.png"); }
 .page-title__content {
   background-color: #16A3BE; }
+  .page-title__content-text {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif; }
+    .page-title__content-text .icon-title {
+      opacity: .3;
+      color: #080d32;
+      padding-left: 15px; }
 
-.message__sidebar {
-  background-color: #221915; }
+.nav-custom .nav-custom__link {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  color: #909090;
+  background-color: transparent; }
+  .nav-custom .nav-custom__link:focus {
+    background-color: transparent; }
+  .nav-custom .nav-custom__link:hover {
+    background-color: transparent; }
+.nav-custom .active .nav-custom__link,
+.nav-custom .active .nav-custom__link:hover,
+.nav-custom .active .nav-custom__link:active {
+  color: #107385;
+  font-weight: 900;
+  background-color: transparent; }
+.nav-custom .active .nav-custom__link {
+  position: relative; }
+  .nav-custom .active .nav-custom__link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 18px;
+    height: 6px;
+    width: 6px;
+    background-color: #107385; }
+
+.message {
+  height: calc(100vh - 92px); }
+  .message__row {
+    height: 100%; }
+  .message__sidebar {
+    background-color: #221915; }
+  .message__body-content {
+    background: url("../img/background/confectionary.png"); }
+
+.tab-content {
+  padding: 30px; }
+
+.fast-message__messageId {
+  display: none; }
+.fast-message__creatMessage {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,8 +1,10 @@
 @import "setting/core";
 @import url('https://fonts.googleapis.com/css?family=Lato');
+
 body {
   font-family: 'Lato', sans-serif;
 }
+
 .row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10,20 +12,20 @@ body {
   display:  flex;
   flex-wrap: wrap;
 }
+
 .row > [class*='col-'] {
   display: flex;
   flex-direction: column;
 }
 
-
 .header {
   &__sidebar {
     background-color: $color-one;
+    background: url("../img/background/footer_lodyas.png");
   }
   &__title {
     background-color: $color-two;
-    color: #737373;
-
+    color: $header-sidebar-title-color;
     &-text {
       font-weight: bold;
       padding-top: 13px;
@@ -31,6 +33,7 @@ body {
       &-content {
         font-size: 16px;
         font-family: 'Lato', sans-serif;
+        padding-left: 10px;
       }
     }
     &-name {
@@ -44,20 +47,20 @@ body {
 
 .page-title {
   &__panel {
-    background: url("../img/background/zwartevilt.png");
+    background: url("../img/background/stardust.png");
   }
   &__content {
     background-color: $header-title;
+    box-shadow: inset 0px -15px 16px -10px $box-shodow-header, inset 0px 8px 20px -5px $box-shodow-header;
     &-text {
       font-size: 18px;
-      margin-top: 15px;
-      margin-bottom: 15px;
-      color: #ffffff;
+      margin-top: 18px;
+      margin-bottom: 18px;
+      color: $second-header-color;
       font-family: 'Lato', sans-serif;
-
       .icon-title {
         opacity: .3;
-        color: #080d32;
+        color: $second-header-icon;
         padding-left: 15px;
       }
     }
@@ -68,7 +71,7 @@ body {
   .nav-custom__link {
     font-size: 16px;
     font-family: 'Lato', sans-serif;
-    color: #909090;
+    color: $nav-custom-link;
     background-color: transparent;
     &:focus {
       background-color: transparent;
@@ -81,10 +84,9 @@ body {
     .nav-custom__link,
     .nav-custom__link:hover,
     .nav-custom__link:active {
-      color: #107385;
+      color: $nav-custom-link-status;
       font-weight: 900;
       background-color: transparent;
-
     }
     .nav-custom__link {
       position: relative;
@@ -95,7 +97,7 @@ body {
         top:18px;
         height: 6px;
         width: 6px;
-        background-color: #107385;;
+        background-color: $nav-custom-link-status;
       }
     }
   }
@@ -108,21 +110,51 @@ body {
   }
   &__sidebar {
     background-color: $sidebar-background;
+    background: url('../img/background/footer_lodyas.png');
   }
   &__body-content {
     background: url("../img/background/confectionary.png");
   }
 }
 
+.nav-pills>li.active>a:focus {
+  background: transparent;
+  color:$nav-custom-link-status;
+}
+
 .tab-content {
   padding: 30px;
 }
+
 .fast-message {
   &__messageId {
     display: none;
+    &-submit-btn {
+      margin-top: 10px;
+    }
   }
   &__creatMessage {
     display: none;
   }
+}
 
+.show-message-id,
+.show-creat-message {
+  display: block;
+}
+
+.dropdown__custom-form {
+  margin-top: -1px;
+  padding: 6px 20px;
+  &-userId {
+    padding: 20px;
+  }
+  &-courseld {
+    .form-control {
+      z-index: 1;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 522px;
+  }
 }

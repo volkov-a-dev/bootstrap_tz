@@ -14,9 +14,10 @@ body {
   flex-direction: column; }
 
 .header__sidebar {
-  background-color: #2E282A; }
+  background-color: #2E282A;
+  background: url("../img/background/footer_lodyas.png"); }
 .header__title {
-  background-color: #D1D8C9;
+  background-color: #f3efe4;
   color: #737373; }
   .header__title-text {
     font-weight: bold;
@@ -24,19 +25,21 @@ body {
     padding-bottom: 13px; }
     .header__title-text-content {
       font-size: 16px;
-      font-family: 'Lato', sans-serif; }
+      font-family: 'Lato', sans-serif;
+      padding-left: 10px; }
   .header__title-name-content {
     padding-top: 13px;
     font-family: 'Lato', sans-serif; }
 
 .page-title__panel {
-  background: url("../img/background/zwartevilt.png"); }
+  background: url("../img/background/stardust.png"); }
 .page-title__content {
-  background-color: #16A3BE; }
+  background-color: #16A3BE;
+  box-shadow: inset 0px -15px 16px -10px rgba(255, 255, 255, 0.5), inset 0px 8px 20px -5px rgba(255, 255, 255, 0.5); }
   .page-title__content-text {
     font-size: 18px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 18px;
+    margin-bottom: 18px;
     color: #ffffff;
     font-family: 'Lato', sans-serif; }
     .page-title__content-text .icon-title {
@@ -75,16 +78,38 @@ body {
   .message__row {
     height: 100%; }
   .message__sidebar {
-    background-color: #221915; }
+    background-color: #221915;
+    background: url("../img/background/footer_lodyas.png"); }
   .message__body-content {
     background: url("../img/background/confectionary.png"); }
+
+.nav-pills > li.active > a:focus {
+  background: transparent;
+  color: #107385; }
 
 .tab-content {
   padding: 30px; }
 
 .fast-message__messageId {
   display: none; }
+  .fast-message__messageId-submit-btn {
+    margin-top: 10px; }
 .fast-message__creatMessage {
   display: none; }
+
+.show-message-id,
+.show-creat-message {
+  display: block; }
+
+.dropdown__custom-form {
+  margin-top: -1px;
+  padding: 6px 20px; }
+  .dropdown__custom-form-userId {
+    padding: 20px; }
+  .dropdown__custom-form-courseld .form-control {
+    z-index: 1; }
+  @media screen and (min-width: 768px) {
+    .dropdown__custom-form {
+      min-width: 522px; } }
 
 /*# sourceMappingURL=style.css.map */

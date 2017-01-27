@@ -12,11 +12,11 @@
 	<body>
 		<div class="container-fluid">
 			<header class="header row">
-				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 header__sidebar "></div>
+				<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 header__sidebar"></div>
 				<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
 					<div class="row header__title">
 						<div class="header__title-text col-xs-6 col-sm-6 col-md-6 col-lg-6 ">
-							<span class=" glyphicon glyphicon-eye-open" aria-hidden="true">
+							<span class="fa fa-eye" aria-hidden="true">
 								<i class="header__title-text-content">Dashboard</i>
 							</span>
 						</div>
@@ -30,7 +30,7 @@
 			</header>
 			<section class="page-title">
 				<div class="row">
-					<div class="page-title__panel col-xs-3 col-sm-3 col-md-3 col-lg-3 "></div>
+					<div class="page-title__panel col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
 					<div class="page-title__content col-xs-9 col-sm-9 col-md-9 col-lg-9">
 						<h1 class="page-title__content-text">Admin panel <span class="icon-title glyphicon glyphicon-info-sign" aria-hidden="true"></span></h1>
 					</div>
@@ -42,7 +42,7 @@
 						<ul class="nav nav-pills nav-stacked nav-custom">
 							<li class="active "><a class="nav-custom__link" data-toggle="tab" href="#itemPlan">Plan</a></li>
 							<li><a data-toggle="tab" href="#menu1" class="nav-custom__link">Submit</a></li>
-							<li><a data-toggle="tab" href="#menu2" class="nav-custom__link">New message</a></li>
+							<li><a data-toggle="tab" href="#menu2" class="nav-custom__link">Fast submit message</a></li>
 						</ul>
 					</div>
 					<div class="message__body-content col-xs-9 col-sm-9 col-md-9 col-lg-9">
@@ -50,32 +50,31 @@
 							<div id="itemPlan" class="tab-pane fade in active">
 								<form class="form-horizontal">
 									<div class="form-group">
+										<label class="col-sm-2 text-right" for="time">Time:</label>
 										<div class='input-group date' id='datetimepicker1'>
-											<label class="col-sm-4 text-right" for="time">Time:</label>
 											<div class="col-sm-8">
-												<input  type='text' class="form-control " placeholder="dd/mm/yyyy" id="time"/>
+												<input  type='text' class="form-control" placeholder="dd/mm/yyyy" id="time"/>
 												<span class="input-group-addon">
-													<span class="glyphicon glyphicon-calendar"></span>
+													<i class="fa fa-calendar"></i>
 												</span>
 											</div>
 										</div>
 									</div>
 									<div class="form-group">
-										<label for="sel1" class="col-sm-2  text-right">Id massage:</label>
+										<label for="sel1" class="col-sm-2 text-right">Id massage:</label>
 										<div class="col-sm-10">
-											<select class="form-control " id="sel1">
+											<select class="form-control" id="sel1">
 												<option>1</option>
 												<option>2</option>
 												<option>3</option>
 												<option>4</option>
 											</select>
 										</div>
-
 									</div>
 									<div class="form-group">
-										<label class="control-label col-sm-2  text-right" for="pwd">CourseID:</label>
+										<label class="control-label col-sm-2 text-right">CourseID:</label>
 										<div class="col-sm-10">
-											<input type="text" class="form-control" id="pwd" >
+											<input type="text" class="form-control">
 										</div>
 									</div>
 									<div class="form-group">
@@ -85,41 +84,40 @@
 								</form>
 							</div>
 							<div id="menu1" class="tab-pane fade">
-
 								<table class="table table-responsive table-hover">
 									<thead>
 									<tr>
-										<th>Firstname</th>
-										<th>Lastname</th>
-										<th>Email</th>
+										<th>Time</th>
+										<th>Message id</th>
+										<th>Course id</th>
 										<th>Control</th>
 									</tr>
 									</thead>
 									<tbody>
 									<tr>
-										<td>John</td>
-										<td>Doe</td>
-										<td>john@example.com</td>
+										<td>04/05/2017</td>
+										<td>1</td>
+										<td>Popov-1</td>
 										<td>
-											<button type="button" class="btn btn-info " data-toggle="modal" data-target="#myModal">Edit</button>
+											<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Edit</button>
 											<div class="btn btn-info">Submit</div>
 										</td>
 									</tr>
 									<tr>
-										<td>Mary</td>
-										<td>Moe</td>
-										<td>mary@example.com</td>
+										<td>04/05/2017</td>
+										<td>1</td>
+										<td>Popov-1</td>
 										<td>
-											<button type="button" class="btn btn-info " data-toggle="modal" data-target="#myModal">Edit</button>
+											<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Edit</button>
 											<div class="btn btn-info">Submit</div>
 										</td>
 									</tr>
 									<tr>
-										<td>July</td>
-										<td>Dooley</td>
-										<td>july@example.com</td>
+										<td>04/05/2017</td>
+										<td>3</td>
+										<td>Popov-3</td>
 										<td>
-											<button type="button" class="btn btn-info " data-toggle="modal" data-target="#myModal">Edit</button>
+											<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Edit</button>
 											<div class="btn btn-info">Submit</div>
 										</td>
 									</tr>
@@ -132,21 +130,100 @@
 										<div class="radio">
 											<label class="radio-inline"><input type="radio" name="optradio" onclick="check()" value="messageId">Search in id message</label>
 											<label class="radio-inline"><input type="radio" name="optradio" onclick="check()" value="creatMessage">Write message</label>
-									</div>
-									<div class="fast-message__messageId">
-										<h2>ID</h2>
+										</div>
+										<div class="fast-message__messageId">
+											<form class="form-horizontal">
+												<label >Search message</label>
+												<div class="input-group col-sm-6">
+													<input type="text" class="form-control" placeholder="Message id" />
+													<div class="input-group-btn">
+													<div class="btn-group" role="group">
+														<div class="dropdown dropdown-lg dropdown__custom">
+															<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+															<button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+															<div class="dropdown-menu dropdown-menu-right dropdown__custom-form" role="menu">
+																<div class="row dropdown__custom-form-userId">
+																	<label for="filter">Filter by</label>
+																	<select class="form-control" id="filter">
+																		<option value="0" selected>Message 1</option>
+																		<option value="1">Message 2</option>
+																		<option value="2">Message 3</option>
+																		<option value="3">Message 4</option>
+																		<option value="4">Message 5</option>
+																	</select>
+																</div>
+																<div class="row">
+																	<div class="col-sm-2 col-sm-offset-10">
+																		<button type="button" class="btn btn-primary">Add</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="input-group col-sm-6" id="adv-search">
+												<div class=" dropdown__custom-form-courseld">
+													<label for="user-search-id-course">Course Id</label>
+													<select class="form-control" id="user-search-id-course">
+														<option value="0" selected>Popov-1</option>
+														<option value="1">Popov-2</option>
+														<option value="2">Popov-3</option>
+														<option value="3">Popov-4</option>
+														<option value="4">Popov-5</option>
+													</select>
+												</div>
+											</div>
+											<div class="input-group col-sm-6 fast-message__messageId-submit-btn">
+												<button class="btn btn-info col-sm-offset-10">Submit</button>
+											</div>
+										</form>
 									</div>
 									<div class="fast-message__creatMessage">
-										<h2>Creat message</h2>
+										<form class="form-horizontal">
+											<div class="form-group">
+												<div class="btn-toolbar" data-role="editor-toolbar" >
+													<div class="btn-group">
+														<a class="btn btn-default" data-edit="justifyleft" title=""><i class="fa fa-align-left"></i></a>
+														<a class="btn btn-default" data-edit="justifycenter" title=""><i class="fa fa-align-center"></i></a>
+														<a class="btn btn-default" data-edit="justifyright" title=""><i class="fa fa-align-right"></i></a>
+														<a class="btn btn-default" data-edit="justifyfull" title=""><i class="fa fa-align-justify"></i></a>
+													</div>
+													<div class="btn-group">
+														<a class="btn btn-default" data-edit="chain" title=""><i class="fa fa-chain"></i></a>
+														<a class="btn btn-default" data-edit="chain-broken" title=""><i class="fa fa-chain-broken"></i></a>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="comment">Message:</label>
+												<textarea class="form-control" rows="5" id="comment"></textarea>
+											</div>
+											<div class="form-group">
+												<div class="dropdown__custom-form-courseld">
+													<label for="user">Course Id</label>
+													<select class="form-control" id="user">
+														<option value="0" selected>Popov-1</option>
+														<option value="1">Popov-2</option>
+														<option value="2">Popov-3</option>
+														<option value="3">Popov-4</option>
+														<option value="4">Popov-5</option>
+													</select>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="col-sm-2"></div>
+												<button type="submit" class="btn btn-default col-sm-2 col-sm-offset-8">Submit</button>
+											</div>
+										</form>
 									</div>
 								</div>
 							</div>
-
 						</div>
+					</div>
 					</div>
 				</div>
 			</section>
-
 		</div>
 
 		<div class="modal fade" id="myModal" role="dialog">
@@ -160,27 +237,26 @@
 					<div class="modal-body">
 						<form class="form-horizontal">
 							<div class="form-group">
-								<div class='input-group date' id='datetimepicker1'>
-									<label class="col-sm-4 text-right" for="time">Time:</label>
+								<div class="input-group date" id="datetimepicker2">
+									<label class="col-sm-4 text-right" for="time-modal">Time:</label>
 									<div class="col-sm-8">
-										<input  type='text' class="form-control " placeholder="dd/mm/yyyy" value="04/05/2017" id="time"/>
+										<input  type="text" class="form-control" placeholder="dd/mm/yyyy" value="04/05/2017" id="time-modal"/>
 										<span class="input-group-addon">
-													<span class="glyphicon glyphicon-calendar"></span>
-												</span>
+											<span class="glyphicon glyphicon-calendar"></span>
+										</span>
 									</div>
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="sel1" class="col-sm-2  text-right">Id massage:</label>
+								<label for="sel2" class="col-sm-2  text-right">Id massage:</label>
 								<div class="col-sm-10">
-									<select class="form-control "  id="sel1">
+									<select class="form-control" id="sel2">
 										<option value="1">1</option>
 										<option value="2" selected>2</option>
 										<option value="3">3</option>
 										<option value="4">4</option>
 									</select>
 								</div>
-
 							</div>
 							<div class="form-group">
 								<label class="control-label col-sm-2  text-right" for="pwd">CourseID:</label>
@@ -195,12 +271,12 @@
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 					</div>
 				</div>
-
 			</div>
 		</div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://use.fontawesome.com/af290806a8.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.min.js"></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
 		<script src="js/app.js"></script>

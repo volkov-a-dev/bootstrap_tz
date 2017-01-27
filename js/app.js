@@ -1,6 +1,8 @@
 console.log('js');
 $('#datetimepicker1').datepicker();
 $('#datetimepicker2').datepicker();
+$('#timepicker1').timepicker();
+$('#timepicker2').timepicker();
 
 function check()
 {

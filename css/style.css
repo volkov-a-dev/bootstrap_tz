@@ -30,6 +30,8 @@ body {
   .header__title-name-content {
     padding-top: 13px;
     font-family: 'Lato', sans-serif; }
+    .header__title-name-content-link {
+      padding-left: 10px; }
 
 .page-title__panel {
   background: url("../img/background/stardust.png"); }
